@@ -277,6 +277,36 @@ ul.aside{
     color: white;
 }
 
+.sliders{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../images/icon-slides.png");
+    z-index: 2;
+}
+#prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+#prev:hover{
+    background-position: 0  0;
+}
+#next{
+    right: 0;
+    background-position: -125px 0;
+}
+#next:hover{
+    background-position: -43px 0;
+}
+
+
+
+
+
+
 /*轮播图结束*/
 
 
@@ -389,8 +419,12 @@ ul.aside{
     float: left;
     padding: 48px 0;
     box-shadow: 0.05rem 0.05rem 0.3rem #d5d5d5;
+    transition: 0.3s;
 }
-
+.lighting .content .lighting-middle li:hover{
+    box-shadow: 0 0 40px #d0d0d0;
+    transform: translateY(-3px);
+}
 .lighting .content .lighting-middle li a .lighting-image{
     width: 34px;
     height: 53px;
@@ -522,6 +556,7 @@ ul.aside{
 }
 .phone .content .phone-middle ul a:hover li{
     box-shadow: 0 0 40px #d0d0d0;
+    transform: translateY(-3px);
 }
 .phone .content .phone-middle ul a li .new{
     width: 64px;
@@ -647,6 +682,7 @@ ul.aside{
 }
 .electric-middle-left img:hover{
     box-shadow: 0 0 40px #d0d0d0;
+    transform: translateY(-3px);
 }
 .electric-middle-left div{
     width: 100%;
@@ -676,6 +712,7 @@ ul.aside{
 }
 .electric-middle ul a:hover li{
     box-shadow: 0 0 40px #d0d0d0;
+    transform: translateY(-3px);
 }
 
 .electric-middle ul a li .new{
@@ -1146,6 +1183,7 @@ ul.aside{
 }
 .hot .content ul a:hover li{
     box-shadow: 0 0 40px #b7b7b7;
+    transform: translateY(-3px);
 }
 .hot .content ul a li .hot-image{
     width: 100%;
@@ -1263,6 +1301,7 @@ ul.aside{
 }
 .content-2 .content .content-2-bottom li:hover{
     box-shadow: 0 0 40px #adaaaa;
+    transform: translateY(-3px);
 }
 .content-2 .content .content-2-bottom li p:nth-child(1){
     width: 100%;
@@ -1425,6 +1464,7 @@ ul.aside{
 }
 .video .content .video-bottom li:hover{
     box-shadow: 0 0 40px #adaaaa;
+    transform: translateY(-3px);
 }
 .video .content .video-bottom li .bottom-image{
     display: block;
